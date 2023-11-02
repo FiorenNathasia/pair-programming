@@ -3,9 +3,9 @@ import sound from "./assets/audio/sound.wav";
 import { loadFull } from "tsparticles";
 import { useCallback, useState, useEffect } from "react";
 import "./App.scss";
-import Logo from "./assets/image/logo.PNG";
 import PlayIcon from "./assets/image/icons/play.svg";
 import SideBarList from "./components/SideBarList/SideBarList";
+import Header from "./components/Header/Header";
 
 const App = () => {
   //Bacckground Animation
@@ -96,8 +96,7 @@ const App = () => {
     <>
       <Particles options={options} init={particlesInit} />
       <div className="app">
-        <img className="app__logo" src={Logo} alt="Logo" />
-        <div className="main__slogan">Discover more of London with us</div>
+        <Header />
         <SideBarList />
         <button className="main__button" onClick={() => playOrPause()}>
           <img

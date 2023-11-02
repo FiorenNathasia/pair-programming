@@ -1,5 +1,6 @@
 import "./sizecard.scss";
 import "./fliptransition.scss";
+import image1 from "../../assets/image/illustrations/DrawKit-Fashion-Illustration-02.png";
 
 export default function SizeCard({ onClick }) {
   return (

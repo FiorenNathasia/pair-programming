@@ -1,0 +1,42 @@
+.sizecard {
+  //sizing//
+  height: 100%;
+  width: 100%;
+
+  transform-style: preserve-3d;
+
+  //styling
+  border-radius: 5px;
+  border: 5px solid white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+
+  //Content Allignment
+  position: relative;
+
+  &__back,
+  &__front {
+    //Sizing
+    height: 100%;
+    width: 100%;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    //Alignment
+    position: absolute;
+
+    //Content Allignment
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__front {
+    background-color: aqua;
+  }
+
+  &__back {
+    background-color: beige;
+    transform: rotateY(180deg);
+  }
+}

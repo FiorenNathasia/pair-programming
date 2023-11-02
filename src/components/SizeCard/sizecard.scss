@@ -13,6 +13,9 @@
   //Content Allignment
   position: relative;
 
+  user-select: none;
+  cursor: pointer;
+
   &__back,
   &__front {
     //Sizing

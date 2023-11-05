@@ -1,9 +1,21 @@
 .app {
-  color: #dde1ee;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
+
+  &__layout {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 3rem;
+  }
+
+  &__questionare {
+    width: 100%;
+    height: 70%;
+    background-color: cornflowerblue;
+  }
 }
 
 .main {

@@ -6,6 +6,7 @@ import "./App.scss";
 import PlayIcon from "./assets/image/icons/play.svg";
 import SideBarList from "./components/SideBarList/SideBarList";
 import Header from "./components/Header/Header";
+import Questionnaire from "./components/Questionare/Questionare";
 
 const App = () => {
   //Bacckground Animation
@@ -97,7 +98,12 @@ const App = () => {
       <Particles options={options} init={particlesInit} />
       <div className="app">
         <Header />
-        <SideBarList />
+        <div className="app__layout">
+          <div className="app_questionare">
+            <Questionnaire />
+            {/* <SideBarList /> */}
+          </div>
+        </div>
         <button className="main__button" onClick={() => playOrPause()}>
           <img
             className="header__upload--icon"

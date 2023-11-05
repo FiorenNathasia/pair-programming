@@ -6,8 +6,6 @@ export default function SideBarList() {
     <>
       <div className="sidebarlist">
         <FlippableCard />
-        <FlippableCard />
-        <FlippableCard />
       </div>
     </>
   );

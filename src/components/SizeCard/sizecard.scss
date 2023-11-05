@@ -7,7 +7,7 @@
 
   //styling
   border-radius: 5px;
-  //   border: 5px solid white;
+  border: 5px solid white;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
 
   //Content Allignment
@@ -35,18 +35,11 @@
   }
 
   &__front {
-    background-color: #6495ed;
-    border-radius: 5px;
+    background-color: rgb(57, 142, 142);
   }
 
   &__back {
-    border-radius: 5px;
-    background-color: #d7c6a8;
+    background-color: rgb(187, 166, 104);
     transform: rotateY(180deg);
-  }
-
-  &__image {
-    width: 5rem;
-    height: 5rem;
   }
 }
